@@ -1,247 +1,234 @@
-body{
+body {
 	margin: 0px;
 	padding: 0px;
 	font-family: Open Sans;
 }
-
-div{
+div {
 	box-sizing: border-box;
 }
-
-.clearfix:after{
+.clearfix:after {
 	content: '';
 	display: table;
 	width: 100%;
 	clear: both;
 }
-header{
-	background: url(../img/navbar_2.png) no-repeat  center top / cover;
+header {
+	background: url(../img/navbar_2.png) no-repeat center top / cover;
 }
-
-.nav__bar__panel{
+.nav__bar__panel {
 	width: 70%;
 	margin: 0 auto;
 }
-
-.nav__bar__logo{
+.nav__bar__logo {
 	margin-top: 30px;
 	float: left;
 }
-
-nav{
+nav {
 	float: right;
 	margin-top: 40px;
 }
-
-.nav__bar__menu{
+.nav__bar__menu {
 	padding: 0;
 	margin: 0;
 	display: block;
 }
-
-.nav__bar__menu li{
+.nav__bar__menu li {
 	float: left;
 	display: block;
 }
-
-.nav__bar__menu a{
+.nav__bar__menu a {
 	text-decoration: none;
-  font-family: 'Lora', serif;
+	font-family: 'Lora', serif;
 	margin-left: 77px;
 	color: #fff;
 }
-
-.nav__bar__text{
+.nav__bar__text {
 	text-align: center;
 	color: #fff;
 	text-transform: uppercase;
 	margin-top: 150px;
 }
-
-.nav__bar__main__title{
+.nav__bar__main__title {
 	font-size: 25px;
-	letter-spacing:10px;
+	letter-spacing: 10px;
 	margin: 0;
 }
-
-.nav__bar__other__title h2{
+.nav__bar__other__title h2 {
 	font-size: 40px;
 	font-weight: 600;
 	font-family: Lato;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
-
-.nav__bar__other__title p{
+.nav__bar__other__title p {
 	font-size: 20px;
 	font-weight: 10;
 	margin: 0;
 }
-
-.nav__bar__btn button{
+.nav__bar__btn button {
 	display: inline-block;
-  width: 150px;
-  padding: 15px;
-  color: #fff;
-  border: 2px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
+	width: 150px;
+	padding: 15px;
+	color: #fff;
+	border: 2px solid #fff;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
 	background-color: transparent;
 	font-weight: bold;
 	margin-top: 40px;
 }
-
-.nav__bar__btn__slider button{
+.nav__bar__btn__slider button {
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
-  padding: 5px;
+	border: 1px solid #fff;
+	background-color: rgba(255, 255, 255, 0);
+	padding: 5px;
 }
-
-.container__products{
+.container__products {
 	width: 70%;
 	margin: 0 auto;
 }
-
 .container__caption {
 	font-size: 20px;
 	font-style: italic;
 	padding: 20px;
 	text-align: center;
 }
-
-.container__caption hr{
+.container__caption hr {
 	border-color: #FF0000;
 	width: 5%;
 }
-
 .post {
-	float: left;
-  padding: 2%;
-  margin: 1%;
-	height: 300px;
-	width: 30%;
+	width: 100%;
 }
-
-.post:last-child{
-	float: right;
+.post:last-child {}
+.catecories__1 {
+	flex: auto;
 }
-
-.conteiner__products__categories p{
-	text-align: center;
-	font-size: 30px;
-	padding: 45%;
-	border: 2px solid #fff;
-	color: #fff;
-	font-style: italic;
-	margin: 0 auto;
+.catecories__2 {
+	width: 100%;
+	height: 100%;
+	margin-left: 2%;
+	margin-right: 2%;
+	vertical-align: middle;
 }
-
-.catecories__1{
-	background: url(../img/product_men.png) no-repeat  center top / cover;
-}
-
-.catecories__2{
-	background: url(../img/product_woman.png) no-repeat  center top / cover;
-}
-
-.catecories__3{
-	background: url(../img/product_watches.png) no-repeat  center top / cover;
-}
-
-.conteiner__products__shares hr{
+.catecories__3 {}
+.conteiner__products__shares hr {
 	border-color: #FFF;
 	width: 50%;
 }
-
-.conteiner__products__shares p{
+.conteiner__products__shares p {
 	text-align: center;
 	font-size: 35px;
 	color: #fff;
 	font-family: Lato;
 	margin: 0 auto;
 }
-
-.sale{
+.sale {
 	float: left;
-  padding: 5px;
-  margin: 1%;
+	padding: 5px;
+	margin: 1%;
 	height: 300px;
 	width: 46%;
 	margin-bottom: 5%;
 }
-
-.sale__hr{
+.sale__hr {
 	margin-top: 20%;
 }
-
-.sale:last-child{
+.sale:last-child {
 	float: right;
 }
-
-.shares__1{
-	background: url(../img/product_40.png) no-repeat  center top / cover;
+.shares__1 {
+	background: url(../img/product_40.png) no-repeat center top / cover;
 }
-
-.shares__2{
-	background: url(../img/product_sale.png) no-repeat  center top / cover;
+.shares__2 {
+	background: url(../img/product_sale.png) no-repeat center top / cover;
 }
-
-#conteiner__item{
+#conteiner__item {
 	background-color: #DCDCDC;
 }
-
-.conteiner__item{
+.conteiner__item {
 	width: 70%;
 	margin: 0 auto;
 }
-
-.conteiner__item__product__img img{
+.conteiner__item__product__img img {
 	float: left;
 	width: 46%;
 }
-
-.container__item__product__description{
+.container__item__product__description {
 	float: right;
 	width: 46%;
 }
-
-.container__item__product__description__text h1{
+.container__item__product__description__text h1 {
 	font-weight: bold;
-	color:#FF0000;
+	color: #FF0000;
 	font-family: Lato;
 }
-
-.container__item__product__description__text p{
+.container__item__product__description__text p {
 	color: #A9A9A9;
 	font-size: 14px;
 }
-
-.container__item__product__description hr{
+.container__item__product__description hr {
 	width: 10%;
 	color: #000;
 	float: left;
 }
-
-.ghost-button{
+.ghost-button {
 	display: inline-block;
-  width: 10%;
-  padding: 8px;
-  color: #000;
-  border-top: 1px solid #000;
+	width: 10%;
+	padding: 8px;
+	color: #000;
+	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
 	margin-right: 5%;
 }
-
-.container__item__product__description__main__btn .ghost-button{
+.container__item__product__description__main__btn .ghost-button {
 	margin-top: 15px;
 	width: 30%;
 	margin-right: 5%;
 }
-
-.conteiner__item__product__slider button{
+.conteiner__item__product__slider button {
 	border-radius: 50%;
-  padding: 5px;
+	padding: 5px;
+}
+.conteiner__products__categories {
+	width: 100%;
+	height: auto;
+	display: inline-flex;
+	flex-direction: row;
+}
+.conteiner__products__categories img {
+	width: 100%;
+}
+.content {
+	font-style: italic;
+	font-size: 4vw;
+	color: #fff;
+	text-align: center;
+	width: 18%;
+	position: absolute;
+	border: 1px solid #fff;
+	margin: 2.19%;
+}
+.content p {
+	margin: 46%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.btn {
+	display: inline-block;
+	padding: 5px;
+}
+.enabled button{
+	background-color: #fff;
+}
+.nav__bar__btn__slider{
+	text-align: center;
+	padding: 2%;
 }
