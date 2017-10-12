@@ -7,8 +7,11 @@
 </head>
 <body>
 	<header>
-		<div class="nav__bar__panel clearfix">
-			<a href="#"><img alt="Brandly" class="nav__bar__logo" src="img/navbar_icon.png"></a>
+		<div class="nav__bar__content">
+		<div class="nav__bar__panel">
+			<div class="nav__bar__logo">
+				<a href="#"><img alt="Brandly" src="img/navbar_icon.png"></a>
+			</div>
 			<nav>
 				<ul class="nav__bar__menu">
 					<li>
@@ -57,10 +60,10 @@
 				<div class="btn disabled">
 					<button name="button" type="button"></button>
 		</div>
-		
 		</div>
+	</div>
 	</header>
-	<section>
+	<section id="container__products">
 		<div class="container__products">
 			<div class="container__caption">
 				<hr>
@@ -81,21 +84,27 @@
 					<p>Wathces</p>
 				</div><img src="img/product_watches.png"></div>
 			</div>
-			<div class="conteiner__products__shares clearfix">
+			<div class="conteiner__products__shares">
 				<div class="sale shares__1">
+					<div class="sale__content">
 					<hr class="sale__hr">
-					<p>40% Off New Autumn Collection</p>
+					<p>40% Off<br> New Autumn<br> Collection</p>
 					<hr>
+					</div>
+					<img src="img/product_40.png">
 				</div>
 				<div class="sale shares__2">
+					<div class="sale__content">
 					<hr class="sale__hr">
-					<p>MEGA SALE ON ITEMS FROM SPIRIT COLLECTION</p>
+					<p>MEGA SALE<br> ON ITEMS FROM<br> SPIRIT COLLECTION</p>
 					<hr>
+					</div>
+					<img src="img/product_sale.png">
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="clearfix" id="conteiner__item">
+	<section id="conteiner__item">
 		<div class="conteiner__item">
 			<div class="container__caption">
 				<hr>
@@ -103,51 +112,89 @@
 				<hr>
 			</div>
 			<div class="conteiner__item__product">
-				<div class="conteiner__item__product__img"><img alt="" src="img/item.png"></div>
-				<div class="container__item__product__description">
+				<div class="conteiner__item__product__img item">
+					<img alt="" src="img/item.png"></div>
+				<div class="container__item__product__description item">
 					<div class="container__item__product__description__text">
 						<h1>NATHAN STEWART JACKET</h1>
 						<p>Summer/Autumn Collection</p>
 						<hr>
-						<br>
 						<p>Classic Nathan Stewart Jacket from his latest collection. This item is loved by many just because of it’s simle style. Simple lines,lovely texture,it suits almost everybody. It comes in six different colors,and all sizes.</p>
 						<p>FASHION TIP:<br>
 						With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
 					</div>
 					<div class="container__item__product__description__size__btn">
-						<a class="ghost-button" href="#">M</a> <a class="ghost-button" href="#">L</a> <a class="ghost-button" href="#">XL</a> <a class="ghost-button" href="#">XLL</a>
+						<a class="ghost-button size__disabled" href="#">M</a>
+				 		<a class="ghost-button size__enabled" href="#">L</a>
+						<a class="ghost-button size__disabled" href="#">XL</a>
+						<a class="ghost-button size__disabled" href="#">XLL</a>
 					</div>
 					<div class="container__item__product__description__main__btn">
 						<a class="ghost-button" href="#">SHOP NOW</a> <a class="ghost-button" href="#">SIZE GUIDE</a>
 					</div>
 				</div>
-			</div><!-- <div class="conteiner__item__product__slider clearfix">
-                <button type="button" name="button" ></button>
-                <button type="button" name="button" ></button>
-                <button type="button" name="button" ></button>
-                <button type="button" name="button" ></button>
-            </div> -->
+			</div>
+			<div class="container__item__btn__slider">
+			<div class="btn disabled">
+						<button name="button" type="button"></button>
+			</div>
+					<div class="btn disabled">
+						<button name="button" type="button"></button>
+			</div>
+					<div class="btn enabled">
+						<button name="button" type="button"></button>
+			</div>
+					<div class="btn disabled">
+						<button name="button" type="button"></button>
+			</div>
+			</div>
 		</div>
 	</section>
-	<section class="clearfix">
-		<div class="container__blog clearfix">
+	<section id="container__blog">
+		<div class="container__blog">
 			<div class="container__caption">
 				<hr>
 				From The Blog
 				<hr>
 			</div>
-			<div class="conteiner__blog__col__1">
-				<img alt="" src="">
-				<h1></h1>
-				<p></p><button name="button" type="button"></button>
-			</div>
-			<div class="conteiner__blog__col__2">
-				<img alt="" src="">
-				<h1></h1>
-				<p></p><button name="button" type="button"></button>
+			<div class="container__blog__row">
+				<div class="conteiner__blog__col__1 item">
+					<img alt="GERMAN FASHION WIZARDS" src="img/blog_1.png">
+					<h1>GERMAN FASHION WIZARDS</h1>
+					<h4>By James Steed   |   Fashion   </h4>
+					<p>Just amazing! That is how i can describe this person.
+						So creative,so inspiring.
+						I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions.
+						From frames,to glass thickness she blew me away...</p>
+					<a class="ghost-button" href="#">READ MORE</a>
+				</div>
+				<div class="conteiner__blog__col__2 item">
+					<img alt="ANNE STEWART’S SUNGLASSES" src="img/blog_2.png">
+					<h1>ANNE STEWART’S SUNGLASSES</h1>
+					<h4>By James Steed   |   Fashion   </h4>
+					<p>Just amazing! That is how i can describe this person.
+						So creative,so inspiring.
+						I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions.
+						From frames,to glass thickness she blew me away...</p>
+					<a class="ghost-button" href="#">READ MORE</a>
+				</div>
 			</div>
 		</div>
 	</section>
-	<div class="footer"></div>
+	<footer>
+		<div class="conteiner__footer">
+			<div class="conteiner__footer__text">
+				<h3>SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE LATEST NEWS AND OFFERS</h3>
+			</div>
+			<div class="conteiner__footer__content">
+				<div class="conteiner__footer__content__edit">
+						<input type="text" size="40">
+				</div>
+				<div class="conteiner__footer__content__btn">
+					<a class="ghost-button" href="#">SUBSCRIBE</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
