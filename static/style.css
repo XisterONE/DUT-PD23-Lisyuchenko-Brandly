@@ -332,28 +332,37 @@ nav {
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 	margin-bottom: 5%;
+	font-size: 1.5vw;
 }
 footer{
 	background: url(../img/footer.png) no-repeat center top / cover;
 }
+.conteiner__footer{
+	width: 70%;
+	margin: 0 auto;
+}
 .conteiner__footer__content__btn .ghost-button {
-	width: 30%;
+	width: 100%;
 	margin-right: 5%;
 	border: 1px solid #fff;
 	margin-bottom: 5%;
 	background-color: #fff;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	font-weight: bold;
 }
-.conteiner__footer__text {
+.conteiner__footer__content {
 	width: 100%;
 	height: auto;
 	margin-top: 1%;
 	display: inline-flex;
 	flex-direction: row;
 }
-.conteiner__footer__text input{
-	width: 100%;
+.conteiner__footer__content__edit input{
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	background-color: transparent;
+	padding: 4%;
+	color: #fff;
 }
 .conteiner__footer__content__edit {
 	flex: auto;
@@ -361,5 +370,15 @@ footer{
 .conteiner__footer__content__btn {
 	width: 100%;
 	height: 100%;
-	margin-left: 2%;
+	margin-left: 30%;
+}
+.conteiner__footer__text h3{
+	font-size: 1.2vw;
+	color: #fff;
+}
+.conteiner__footer__text{
+	margin-top: 5%;
+}
+.footer__item{
+	width: 100%;
 }
