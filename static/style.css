@@ -12,7 +12,7 @@ div {
 	width: 100%;
 	clear: both;
 }
-header {
+.slider{
 	background: url(../img/navbar_2.png) no-repeat center top / cover;
 }
 .nav__bar__content{
@@ -52,30 +52,30 @@ nav {
 	color: #fff;
 	font-size: 1.6vw;
 }
-.nav__bar__text {
+.slider__text {
 	text-align: center;
 	color: #fff;
 	text-transform: uppercase;
 	margin-top: 150px;
 }
-.nav__bar__main__title {
+.slider__main__title {
 	font-size: 1.9vw;
 	letter-spacing: 10px;
 	margin: 0;
 }
-.nav__bar__other__title h2 {
+.slider__other__title h2 {
 	font-size: 3vw;
 	font-weight: 600;
 	font-family: Lato;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
-.nav__bar__other__title p {
+.slider__other__title p {
 	font-size: 1.7vw;
 	font-weight: 10;
 	margin: 0;
 }
-.nav__bar__btn button {
+.slider__btn button {
 	display: inline-block;
 	width: 150px;
 	padding: 15px;
@@ -88,7 +88,7 @@ nav {
 	font-weight: bold;
 	margin-top: 40px;
 }
-.nav__bar__btn__slider button {
+.slider__nav button {
 	width: 1%;
   height: 1%;
 	border-radius: 50%;
@@ -96,6 +96,11 @@ nav {
 	background-color: #fff;
 	padding: 5px;
 }
+/*.slider__slide {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}*/
 .btn {
 	display: inline-block;
 	padding: 1%;
@@ -104,7 +109,7 @@ nav {
 	background-color: rgba(224, 208, 208, 0);
 	border: 1px solid #fff;
 }
-.nav__bar__btn__slider{
+.slider__nav{
 	text-align: center;
 	padding: 2%;
 }
@@ -131,20 +136,22 @@ nav {
 .conteiner__products__categories img {
 	width: 100%;
 }
-.content {
+.content{
 	font-style: italic;
 	font-size: 4vw;
-	color: #fff;
 	text-align: center;
 	width: 18%;
 	position: absolute;
 	border: 1px solid #fff;
 	margin: 2.19%;
+	height: auto;
 }
-.content p {
+.content a {
 	margin: 46%;
 	margin-left: 0;
 	margin-right: 0;
+	text-decoration: none;
+	color: #fff;
 }
 .post {
 	width: 100%;
@@ -381,4 +388,16 @@ footer{
 }
 .footer__item{
 	width: 100%;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
 }
