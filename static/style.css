@@ -6,15 +6,13 @@ body {
 div {
 	box-sizing: border-box;
 }
-.clearfix:after {
+/*.clearfix:after {
 	content: '';
 	display: table;
 	width: 100%;
 	clear: both;
-}
-.slider{
-	background: url(../img/navbar_2.png) no-repeat center top / cover;
-}
+}*/
+
 .nav__bar__content{
 	width: 70%;
 	margin: 0 auto;
@@ -52,11 +50,23 @@ nav {
 	color: #fff;
 	font-size: 1.6vw;
 }
-.slider__text {
+.slider img{
+	width: 100%;
+}
+.slider{
+	width: 100%;
+	position: relative;
+	margin: auto;
+}
+.slider__slide{
 	text-align: center;
+}
+.slider__text {
+	width: 100%;
 	color: #fff;
 	text-transform: uppercase;
 	margin-top: 150px;
+	position: absolute;
 }
 .slider__main__title {
 	font-size: 1.9vw;
@@ -87,20 +97,51 @@ nav {
 	background-color: transparent;
 	font-weight: bold;
 	margin-top: 40px;
+	cursor: pointer;
 }
-.slider__nav button {
-	width: 1%;
-  height: 1%;
+.slider img{
+	width: 100%;
+}
+.dot{
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
 	border-radius: 50%;
-	border: 1px solid #fff;
-	background-color: #fff;
-	padding: 5px;
+	display: inline-block;
+	transition: background-color:0.6s ease;
 }
-/*.slider__slide {
-	height: inherit;
-	position: absolute;
-	width: inherit;
+.dot_2{
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color:0.6s ease;
+}
+.active, .dot_2:hover{
+	background-color: #717171;
+}
+.active, .dot:hover{
+	background-color: #717171;
+}
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration:1s;
+	animation-name:fade;
+	animation-duration:1s;
+}
+/*@-webkit-keyframes fade{
+	0%{opacity:0.4;}
+	100%{opacity:1;}
 }*/
+@keyframes fade{
+	0%{opacity:0.4;}
+	100%{opacity:1;}
+}
 .btn {
 	display: inline-block;
 	padding: 1%;
@@ -377,7 +418,6 @@ footer{
 .conteiner__footer__content__btn {
 	width: 100%;
 	height: 100%;
-	margin-left: 30%;
 }
 .conteiner__footer__text h3{
 	font-size: 1.2vw;
@@ -400,4 +440,22 @@ footer{
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #fff;
+}
+.prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next{
+	right: 8px;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+	background-color: rgba(0,0,0,0.8);
 }
